@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root{
+   --VeryveryDarkBlue : hsl(230, 17%, 14%);
+--VeryDarkBlue  :hsl(232, 19%, 15%);
+--DarkDesaturatedBlue : hsl(228, 28%, 20%);
+--DesaturatedBlue : hsl(228, 34%, 66%);
+--White_Text: hsl(0, 0%, 100%);
+--LimeGreen: hsl(163, 72%, 41%);
+--BrightRed: hsl(356, 69%, 56%);
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%)
+--Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+--YouTube: hsl(348, 97%, 39%);
+
+}
+
+body{
+   font-family: 'Inter', sans-serif;
+   background-color: var(--VeryveryDarkBlue);
+   color: var(--White_Text);
+}
+
+
+
+.flex{
+   display: flex;
+}
+
+.flex-c{
+   display: flex;
+   flex-direction: column;
+}
+.jc-sb{
+   justify-content: space-between;
+}
+
+.ai-c{
+   align-items: center;
+}
+
+.text-gray{
+   color: var(--DesaturatedBlue);
+}
+
+.text-green{
+   color: var(--LimeGreen);
+}
+.text-red{
+   color: var(--BrightRed);
+}
+.text-center{
+   text-align: center;
+}
+.container{
+   width: 75%;
+   margin: 0 auto;
+   padding: 40px 0;
+}
+.bigBoxes__wrapper{
+   margin-top: 20px;
+}
+
+.header h1,.overview h1{
+   font-size: 24px;
+}
+.bigBx{
+   /* height: 180px; */
+   padding: 20px 70px;
+   border: 1px solid transparent;
+   border-top: 4px solid var(--Facebook);
+   border-radius: 2px;
+   background-color:  var(--DarkDesaturatedBlue);
+
+}
+
+.bigBx .followers{
+   display: block;
+   margin-bottom: 20px;
+   font-weight: 300;
+   letter-spacing: 3px;
+}
+.bigBx h2{
+   font-size:38px;
+   margin-top: 20px;
+}
+.fa-facebook-square{
+   color: var(--Facebook);
+   font-size: 18px;
+   margin-right: 4px;
+}
+
+.bigBx:nth-of-type(3){
+   border-top-color:rgb(255, 153, 0)
+}
+.bigBx:nth-of-type(4){
+   border-top-color: var(--YouTube);
+   /* display: none; */
+}
+
+
+.overview{
+   margin-top: 40px;
+}
+.smalBx__wrapper{
+   margin-top: 20px;
+   flex-wrap: wrap;
+}
+.smallBx{
+   /* height: 180px; */
+   padding: 15px;
+   width: 23.4%;
+   border: 1px solid transparent;
+   border-radius: 2px;
+   background-color:  var(--DarkDesaturatedBlue);
+   margin-bottom: 20px;
+}
+
+.smallBx .bottom{
+   margin-top: 20px;
+}
